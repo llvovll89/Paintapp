@@ -20,6 +20,11 @@ body {
     box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3),
     2px 2px 3px rgba(0, 0, 0, .2);
     animation-name: titleMove;
+    animation-duration: .5s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s all;
     border: 1px solid black;
 }
 
@@ -97,7 +102,7 @@ body {
 
 @media (min-width:480px) and (max-width:700px) {
     .titlebar {
-        margin: 10px auto;
+        margin: 30px auto;
         text-align: center;
         font-size: 24px;
         text-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
@@ -158,4 +163,11 @@ body {
         cursor: pointer;
         box-shadow: 2px 5px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
     }
+}
+
+@keyframes titleMove {
+    0% {
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    }
+
 }
